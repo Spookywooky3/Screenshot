@@ -13,14 +13,14 @@ namespace Screenshot
         /// <summary>
         /// Take Screenshot.
         /// </summary>
-        /// <param name="width">Width of the screenshot</param>
-        /// <param name="height">Height of the screenshot</param>
+        /// <param name="width">Width of the screenshot.</param>
+        /// <param name="height">Height of the screenshot.</param>
         /// <param name="open">Open the screenshot?</param>
         /// <param name="save">Save the screenshot?</param>
         /// <param name="saveLocation">Location to save (Leave null if save is false).</param>
         /// <param name="format">The ImageFormat to save as.</param>
         /// <returns></returns>
-        public Bitmap TakeScreenshot(int width, int height, bool open, bool save, string saveLocation = null, ImageFormat format = null)
+        public void TakeScreenshot(int width, int height, bool open, bool save, string saveLocation = null, ImageFormat format = null)
         {
             Rectangle size;
             size.Width = width;
@@ -40,6 +40,23 @@ namespace Screenshot
                     Process p = new Process();
                     p.StartInfo.FileName = $"{Path.GetTempPath()}\\bitmap.jpg";
                 }
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="width">Width of the screenshot.</param>
+        /// <param name="height">Height of the screenshot.</param>
+        /// <returns>Returns a bitmap.</returns>
+        public Bitmap TakeBitmapScreenshot(int width, int height)
+        {
+            Rectangle size;
+            size.Width = width;
+            size.Height = height;
+            using (Bitmap bitmap = new Bitmap(width, height))
+            {
+                Graphics graphics = Graphics.FromImage(bitmap);
+                graphics.CopyFromScreen(new Point(size.Left, size.Top), Point.Empty, size.Size);
                 return bitmap;
             }
         }
