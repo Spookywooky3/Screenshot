@@ -1,2 +1,3 @@
 language: csharp
 solution: Screenshot.sln
+os: windows
