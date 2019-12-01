@@ -4,6 +4,7 @@ This is a quick screenshot library I made for a project I'm currently developing
 ## Usage
 ```csharp
 using Screenshot;
+using System.Drawing.Imaging;
 ...
 private void Screenshot()
 {
