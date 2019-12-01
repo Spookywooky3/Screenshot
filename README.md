@@ -11,4 +11,5 @@ private void Screenshot()
     screenshot.TakeScreenshot(1920, 1080, true, true, @"D:\\test.jpg", ImageFormat.Jpeg);
 }
 ```
-## Contributing feel free to contribute, it's always welcome.
+## Contributing
+Feel free to contribute, it's always welcome.
