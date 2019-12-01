@@ -1,4 +1,4 @@
-[![CodeFactor](https://img.shields.io/codefactor/grade/github/spookywooky3/screenshot) [![Build Status](https://travis-ci.org/Spookywooky3/Screenshot.svg?branch=master)](https://travis-ci.org/Spookywooky3/Screenshot)
+![CodeFactor](https://img.shields.io/codefactor/grade/github/spookywooky3/screenshot) [![Build Status](https://travis-ci.org/Spookywooky3/Screenshot.svg?branch=master)](https://travis-ci.org/Spookywooky3/Screenshot)
 # Screenshot
 This is a quick screenshot library I made for a project I'm currently developing, I plan to add more features to here in the future.
 
