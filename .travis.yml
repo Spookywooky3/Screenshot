@@ -1,3 +1,7 @@
 language: csharp
 solution: Screenshot.sln
 os: windows
+mono: none
+dotnet: 2.0.0
+script:
+ - dotnet restore
